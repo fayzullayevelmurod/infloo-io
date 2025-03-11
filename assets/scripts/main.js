@@ -24,21 +24,21 @@
 // })
 // burger
 
-let swiper = new Swiper(".articleSwiper", {
-  slidesPerView: 1,
+let swiper = new Swiper(".clientsSwiper", {
+  slidesPerView: 1.2,
   spaceBetween: 10,
   breakpoints: {
     640: {
-      slidesPerView: 2,
-      spaceBetween: 8,
+      slidesPerView: 2.2,
+      spaceBetween: 30,
     },
     993: {
-      slidesPerView: 2,
-      spaceBetween: 8,
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
     1200: {
-      slidesPerView: 3,
-      spaceBetween: 8,
+      slidesPerView: 4,
+      spaceBetween: 30,
     },
   },
 });

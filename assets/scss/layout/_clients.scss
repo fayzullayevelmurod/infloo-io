@@ -1,0 +1,121 @@
+// clients
+.clients {
+  padding: 70px 0;
+
+  @include media('md') {
+    padding: 30px 0;
+  }
+
+  .main_title {
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include media('md') {
+      margin-bottom: 0;
+    }
+
+    span {
+      background: linear-gradient(264.21deg, #9C38CB 1.72%, #7EBEFF 89.42%),
+      radial-gradient(25.21% 62.16% at -0.11% 111.45%, #76EBF0 0%, rgba(118, 235, 240, 0) 100%),
+      radial-gradient(25.53% 68.37% at 103.19% -3.02%, #E56FFE 0%, rgba(229, 111, 254, 0) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @include media('md') {
+        display: block;
+      }
+    }
+  }
+
+  .clientsSwiper {
+    padding: 30px 0;
+    overflow: visible;
+
+    @include media('lg') {
+      padding: 20px 0;
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  &_block {
+    height: 100%;
+    padding: 30px 20px;
+    background: $color-white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px 0px #2A47360D;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include media('lg') {
+      padding: 16px;
+    }
+
+    img {
+      width: 90px;
+      height: 50px;
+      margin-bottom: 50px;
+
+      @include media('lg') {
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 130%;
+      color: $color-black;
+    }
+  }
+
+  &_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    @include media('md') {
+      flex-direction: column;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: $color-grey;
+
+      @include media('md') {
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+
+  &_star {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background-color: $color-white;
+    width: max-content;
+
+    .starts {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      color: $color-black;
+    }
+  }
+}
+// clients

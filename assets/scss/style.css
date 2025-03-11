@@ -704,6 +704,121 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
 }
 
+.clients {
+  padding: 70px 0;
+}
+@media (max-width: 768px) {
+  .clients {
+    padding: 30px 0;
+  }
+}
+.clients .main_title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .clients .main_title {
+    margin-bottom: 0;
+  }
+}
+.clients .main_title span {
+  background: linear-gradient(264.21deg, #9C38CB 1.72%, #7EBEFF 89.42%), radial-gradient(25.21% 62.16% at -0.11% 111.45%, #76EBF0 0%, rgba(118, 235, 240, 0) 100%), radial-gradient(25.53% 68.37% at 103.19% -3.02%, #E56FFE 0%, rgba(229, 111, 254, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .clients .main_title span {
+    display: block;
+  }
+}
+.clients .clientsSwiper {
+  padding: 30px 0;
+  overflow: visible;
+}
+@media (max-width: 1024px) {
+  .clients .clientsSwiper {
+    padding: 20px 0;
+  }
+}
+.clients .swiper-slide {
+  height: auto;
+}
+.clients_block {
+  height: 100%;
+  padding: 30px 20px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px 0px rgba(42, 71, 54, 0.0509803922);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .clients_block {
+    padding: 16px;
+  }
+}
+.clients_block img {
+  width: 90px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1024px) {
+  .clients_block img {
+    margin-bottom: 10px;
+  }
+}
+.clients_block p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  color: #121225;
+}
+.clients_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+@media (max-width: 768px) {
+  .clients_bottom {
+    flex-direction: column;
+  }
+}
+.clients_bottom p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #718096;
+}
+@media (max-width: 768px) {
+  .clients_bottom p {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+.clients_star {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  width: -moz-max-content;
+  width: max-content;
+}
+.clients_star .starts {
+  display: flex;
+  align-items: center;
+}
+.clients_star span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #121225;
+}
+
 .business {
   padding: 70px 0;
   background: #FFFFFF;
