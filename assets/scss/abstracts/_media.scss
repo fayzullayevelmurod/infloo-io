@@ -16,8 +16,3 @@
     @warn "Invalid breakpoint: `#{$breakpoint}`. Use one of the following: #{map-keys($breakpoints)}.";
   }
 }
-
-// режим работы
-// @include media("lg") {
-//   padding: 10px;
-// }
