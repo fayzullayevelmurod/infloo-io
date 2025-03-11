@@ -5,29 +5,42 @@
   position: relative;
 
   .blue_circle {
-    display: none;
     position: absolute;
     bottom: -616.18px;
     left: 0;
     width: 1083px;
     height: 681px;
-    filter: blur(200px);
+    filter: blur(100px);
     -webkit-backdrop-filter: blur(200px);
     background: $color-blue-light;
     transform: rotate(-9.55deg);
+
+    @include media('lg') {
+      width: 478px;
+      height: 301px;
+      left: -221px;
+      bottom: -232px;
+    }
   }
 
   .pink_circle {
-    display: none;
     position: absolute;
     bottom: -438.98px;
     left: 798px;
     width: 811px;
     height: 511px;
-    backdrop-filter: blur(200px);
+    filter: blur(100px);
     -webkit-backdrop-filter: blur(200px);
     background: rgba(249, 212, 255, 0.6);
     transform: rotate(-9.55deg);
+
+    @include media('lg') {
+      width: 358px;
+      height: 225px;
+      left: auto;
+      right: -162px;
+      bottom: -153px;
+    }
   }
 
   &_logo {
@@ -70,6 +83,8 @@
   }
 
   &_top {
+    position: relative;
+    z-index: 2;
     padding: 70px 0 50px 0;
     display: flex;
     align-items: start;
@@ -157,6 +172,8 @@
   }
 
   &_bottom {
+    position: relative;
+    z-index: 2;
     border-top: 1px solid $color-grey-20;
     padding: 30px 0;
     display: flex;
