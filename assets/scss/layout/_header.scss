@@ -1,0 +1,139 @@
+.header {
+  padding: 24px 0;
+
+  @include media('lg') {
+    padding: 14px 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .burger {
+    display: none;
+
+    @include media('lg') {
+      display: flex;
+    }
+  }
+
+  &_logo {
+    width: 140px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    @include media('lg') {
+      width: 127px;
+      height: 22px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  &_left {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .nav_link {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+
+    @include media('lg') {
+      display: none;
+    }
+
+    a,
+    button {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 100%;
+      color: $color-black;
+      transition: .2s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:hover {
+        color: $color-blue;
+      }
+    }
+
+    .nav_btn {
+      position: relative;
+    }
+
+    .nav_content {
+      width: 220px;
+      position: absolute;
+      top: calc(100% + 11px);
+      z-index: 2;
+      border-radius: 16px;
+      padding: 16px 10px;
+      background: $color-white;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      overflow: hidden;
+
+      a {
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-black;
+        transition: .2s ease;
+
+        &:hover {
+          background: $color-blue-10;
+        }
+      }
+    }
+  }
+
+  &_btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include media('lg') {
+      display: none;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 100%;
+      color: $color-black;
+    }
+
+    .btn_black {
+      color: $color-white;
+    }
+  }
+}
+
+.main_header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
