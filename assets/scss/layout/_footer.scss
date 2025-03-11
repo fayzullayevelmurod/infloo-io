@@ -11,7 +11,7 @@
     left: 0;
     width: 1083px;
     height: 681px;
-    backdrop-filter: blur(200px);
+    filter: blur(200px);
     -webkit-backdrop-filter: blur(200px);
     background: $color-blue-light;
     transform: rotate(-9.55deg);

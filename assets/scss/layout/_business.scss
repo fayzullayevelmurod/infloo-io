@@ -1,0 +1,137 @@
+// business
+.business {
+  padding: 70px 0;
+  background: $color-white;
+
+  .main_title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+
+    span {
+      color: $color-blue;
+    }
+  }
+
+  &_cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  &_card_block {
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid $color-grey-20;
+    position: relative;
+    overflow: hidden;
+
+    &_in {
+      position: relative;
+      z-index: 2;
+    }
+
+    &_bg {
+      position: absolute;
+      width: 531px;
+      height: 405px;
+      filter: blur(100px);
+      right: -243px;
+      bottom: -286px;
+    }
+
+    .green_bg {
+      background: rgba(215, 255, 212, 0.4);
+    }
+
+    .blue_bg {
+      background: rgba(212, 254, 255, 0.4);
+    }
+
+    .pink_bg {
+      background: rgba(254, 212, 255, 0.4);
+    }
+
+    .business_icon {
+      width: 44px;
+      height: 44px;
+    }
+
+    h3 {
+      margin: 20px 0 4px 0;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 100%;
+      color: $color-black;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+
+      &.blue_text {
+        color: $color-blue;
+      }
+      &.green_text {
+        color: $color-green;
+      }
+      &.blue_dark_text {
+        color: $color-blue-dark;
+      }
+      &.pink_text {
+        color: $color-pink-dark;
+      }
+    }
+
+    h6 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 100%;
+      column-rule-color: $color-black;
+      display: flex;
+      gap: 5px;
+      margin: 30px 0 12px 0;
+
+      sup {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 28px;
+        color: $color-black;
+        transform: translateY(5px);
+      }
+
+      sub {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 29px;
+        color: $color-black;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: -2%;
+      color: $color-white;
+      padding: 10.5px;
+      border-radius: 100px;
+
+      &.btn_blue {
+        background: $color-blue;
+      }
+    }
+  }
+
+  &_card_list {
+    margin-top: 30px;
+  }
+}
+// business
