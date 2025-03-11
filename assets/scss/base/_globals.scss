@@ -116,14 +116,13 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .main_title {
   font-weight: 700;
-  font-size: 80px;
-  line-height: 90px;
-  letter-spacing: -1px;
+  font-size: 28px;
+  line-height: 100%;
   color: $color-black;
 
   @include media('lg') {
-    font-size: 36px;
-    line-height: 43.2px;
+    font-size: 17px;
+    line-height: 120%;
   }
 }
 
