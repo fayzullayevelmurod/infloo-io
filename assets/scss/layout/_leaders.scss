@@ -29,7 +29,8 @@
 
       @include media('lg') {
         left: -717px;
-        bottom: -201px;
+        top: -201px;
+        bottom: auto;
         width: 1084px;
         height: 573px;
         filter: blur(50px);
@@ -45,6 +46,17 @@
       height: 641px;
       background: rgba(47, 6, 53, 1);
       filter: blur(100px);
+
+      @include media('lg') {
+        display: none;
+        right: -370px;
+        left: auto;
+        top: auto;
+        bottom: 39px;
+        width: 719px;
+        height: 334px;
+        filter: blur(50px);
+      }
     }
 
     .circle_three {
@@ -56,6 +68,17 @@
       height: 757px;
       background: rgba(47, 6, 53, 1);
       filter: blur(100px);
+
+      @include media('lg') {
+        right: -717px;
+        left: auto;
+        top: auto;
+        bottom: 172px;
+        width: 848px;
+        height: 394px;
+        filter: blur(50px);
+        transform: rotate(30deg);
+      }
     }
   }
 
@@ -190,6 +213,7 @@
 
       @include media('lg') {
         font-size: 14px;
+        margin-bottom: 10px;
       }
     }
 
