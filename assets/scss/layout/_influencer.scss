@@ -1,0 +1,231 @@
+// influencer
+.influencer {
+  padding: 70px 0;
+
+  @include media('md') {
+    padding: 30px 0;
+  }
+
+  .main_title {
+    text-align: center;
+  }
+
+  .tabs {
+    margin: 20px auto 50px auto;
+    max-width: 410px;
+    height: 52px;
+    border: 1px solid $color-grey;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media('md') {
+      padding: 14px;
+      border-radius: 26px;
+      height: 89px;
+      flex-direction: column;
+    }
+
+    @include media('sm') {
+      max-width: 100%;
+    }
+
+    &_in {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 38px;
+      position: relative;
+
+      @include media('md') {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+      }
+
+      &::before {
+        display: none;
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% + 28px);
+        background: $color-grey;
+
+        @include media('md') {
+          display: flex;
+        }
+      }
+    }
+
+    .tab {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+      color: $color-black;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+
+      &.active {
+        color: $color-blue;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          bottom: -17px;
+          width: 60px;
+          height: 3px;
+          border-radius: 99px;
+          background: $color-blue;
+
+          @include media('md') {
+            display: none;
+          }
+        }
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        padding: 4px 12px;
+        border-radius: 99px;
+        background: rgba(217, 254, 236, 1);
+        color: $color-green;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &_link {
+    width: max-content;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: $color-white;
+    padding: 16.5px 20px;
+    border-radius: 99px;
+    background: linear-gradient(264.21deg, #9C38CB 1.72%, #7EBEFF 89.42%),
+    radial-gradient(25.21% 62.16% at -0.11% 111.45%, #76EBF0 0%, rgba(118, 235, 240, 0) 100%),
+    radial-gradient(25.53% 68.37% at 103.19% -3.02%, #E56FFE 0%, rgba(229, 111, 254, 0) 100%);
+
+    @include media('md') {
+      margin: 0 auto;
+      font-size: 13px;
+      padding: 11px 20px;
+    }
+  }
+
+  &_block {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include media('lg') {
+      gap: 30px;
+      flex-direction: column;
+    }
+  }
+
+  &_text {
+    position: relative;
+    z-index: 2;
+    max-width: 595px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @include media('md') {
+      gap: 30px;
+    }
+
+    &_block {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include media('md') {
+        gap: 10px;
+      }
+    }
+
+    h6 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      color: $color-black;
+
+      @include media('md') {
+        font-size: 14px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: $color-grey;
+
+      @include media('md') {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &_img {
+    flex-shrink: 0;
+    max-width: 592px;
+    position: relative;
+
+    .circle_pink {
+      position: absolute;
+      bottom: 0;
+      right: 27px;
+      width: 380px;
+      height: 299px;
+      background: rgba(249, 212, 255, 0.6);
+      filter: blur(100px);
+
+      @include media('md') {
+        top: 0;
+        margin: auto;
+        right: 27px;
+        width: 179px;
+        height: 123px;
+        filter: blur(41px);
+      }
+    }
+
+    .circle_blue {
+      position: absolute;
+      top: 4px;
+      left: -69px;
+      width: 508px;
+      height: 397px;
+      background: rgba(212, 254, 255, 0.6);
+      filter: blur(100px);
+
+      @include media('md') {
+        top: -5px;
+        left: -31px;
+        width: 239px;
+        height: 164px;
+        filter: blur(41px);
+      }
+    }
+
+    img {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+// influencer
