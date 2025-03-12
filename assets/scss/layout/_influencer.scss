@@ -6,6 +6,10 @@
     padding: 30px 0;
   }
 
+  .container {
+    max-width: 1480px;
+  }
+
   .main_title {
     text-align: center;
   }
@@ -89,17 +93,6 @@
           }
         }
       }
-
-      span {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 100%;
-        padding: 4px 12px;
-        border-radius: 99px;
-        background: rgba(217, 254, 236, 1);
-        color: $color-green;
-        white-space: nowrap;
-      }
     }
   }
 
@@ -126,6 +119,7 @@
   &_block {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
 
     @include media('lg') {

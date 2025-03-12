@@ -1,0 +1,237 @@
+// leaders
+.leaders {
+
+  .container {
+    max-width: 1480px;
+  }
+
+  &_in {
+    border-radius: 40px;
+    background: rgba(18, 18, 37, 1);
+    overflow: hidden;
+    position: relative;
+    padding: 70px 20px;
+
+    @include media('md') {
+      padding: 30px 20px;
+      border-radius: 30px;
+    }
+
+    .circle_one {
+      position: absolute;
+      left: -1225px;
+      bottom: -441px;
+      transform: rotate(15deg);
+      width: 2081px;
+      height: 1100px;
+      background: rgba(47, 6, 53, 1);
+      filter: blur(100px);
+
+      @include media('lg') {
+        left: -717px;
+        bottom: -201px;
+        width: 1084px;
+        height: 573px;
+        filter: blur(50px);
+      }
+    }
+
+    .circle_two {
+      position: absolute;
+      right: -481px;
+      bottom: -748px;
+      transform: rotate(162deg);
+      width: 1380px;
+      height: 641px;
+      background: rgba(47, 6, 53, 1);
+      filter: blur(100px);
+    }
+
+    .circle_three {
+      position: absolute;
+      right: -740px;
+      bottom: -490px;
+      transform: rotate(162deg);
+      width: 1628px;
+      height: 757px;
+      background: rgba(47, 6, 53, 1);
+      filter: blur(100px);
+    }
+  }
+
+  .main_title {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: $color-white;
+  }
+
+  .tabs {
+    position: relative;
+    z-index: 2;
+    margin: 20px auto;
+    max-width: 352px;
+    height: 52px;
+    border: 1px solid $color-grey;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media('lg') {
+      margin: 20px auto 30px auto;
+    }
+
+    @include media('md') {
+      padding: 14px;
+      border-radius: 26px;
+      height: 89px;
+      flex-direction: column;
+    }
+
+    @include media('sm') {
+      max-width: 100%;
+    }
+
+    &_in {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 38px;
+      position: relative;
+
+      @include media('md') {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+      }
+
+      &::before {
+        display: none;
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% + 28px);
+        background: $color-grey;
+
+        @include media('md') {
+          display: flex;
+        }
+      }
+    }
+
+    .tab {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+      color: $color-white;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+
+      &.active {
+        color: $color-blue;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          bottom: -17px;
+          width: 60px;
+          height: 3px;
+          border-radius: 99px;
+          background: $color-blue;
+
+          @include media('md') {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &_block {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+
+    @include media('lg') {
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+  }
+
+  &_text {
+
+    &_in {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 50px 30px;
+      max-width: 595px;
+
+      @include media('lg') {
+        gap: 30px 20px;
+      }
+    }
+
+    h6 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 100%;
+      color: $color-white;
+      margin-bottom: 20px;
+
+      @include media('lg') {
+        font-size: 14px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: $color-grey;
+
+      @include media('lg') {
+        font-size: 13px;
+      }
+    }
+
+    a {
+      width: max-content;
+      display: block;
+      margin-top: 50px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: -2%;
+      color: $color-white;
+      padding: 16.5px 20.5px;
+      border-radius: 99px;
+      background: $color-blue;
+
+      @include media('lg') {
+        padding: 11px 33.5px;
+        font-size: 13px;
+        margin: 20px auto 0 auto;
+      }
+    }
+  }
+
+  &_img {
+    max-width: 566px;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+// leaders
