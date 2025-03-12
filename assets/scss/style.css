@@ -715,6 +715,112 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
 }
 
+.nav_bg {
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 37, 0.25);
+  z-index: 10;
+  transition: 0.2s ease;
+}
+.nav_bg.active {
+  left: 0;
+}
+
+.nav_block {
+  padding: 30px 0;
+  background: rgb(243, 255, 248);
+}
+.nav_block .header_btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 30px;
+}
+.nav_block .header_btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: #121225;
+  box-shadow: 0px 10px 30px 0px rgba(42, 71, 54, 0.05);
+  border: 1px solid #0071E3;
+  border-radius: 99px;
+  padding: 9px;
+  height: 38px;
+  flex: 1;
+}
+.nav_block .header_btns .btn_black {
+  height: 38px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+}
+.nav_block .nav_link {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.nav_block .nav_link a,
+.nav_block .nav_link button {
+  padding: 16px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  color: #121225;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid rgba(113, 128, 150, 0.2);
+}
+.nav_block .nav_link a:hover,
+.nav_block .nav_link button:hover {
+  color: #0071E3;
+}
+.nav_block .nav_link .nav_item {
+  width: 100%;
+}
+.nav_block .nav_link .nav_btn_two {
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+.nav_block .nav_link .nav_btn_two img {
+  transition: 0.2s ease;
+}
+.nav_block .nav_link .nav_btn_two.active img {
+  transform: rotate(180deg);
+}
+.nav_block .nav_link .nav_content_two {
+  width: 100%;
+  padding: 10px 0 20px 0;
+  display: none;
+  padding-left: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav_block .nav_link .nav_content_two.active {
+  display: flex;
+}
+.nav_block .nav_link .nav_content_two a {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #121225;
+  transition: 0.2s ease;
+  border: none;
+}
+.nav_block .nav_link .nav_content_two a:hover {
+  background: rgba(0, 113, 227, 0.1);
+}
+
 .home {
   padding-top: 50px;
 }
