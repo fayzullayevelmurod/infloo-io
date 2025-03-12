@@ -704,6 +704,327 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
 }
 
+.home {
+  padding-top: 50px;
+}
+@media (max-width: 1024px) {
+  .home {
+    padding-top: 20px;
+  }
+}
+.home .container {
+  max-width: 1480px;
+  position: relative;
+}
+.home .circle_blue {
+  position: absolute;
+  top: 12px;
+  left: -240px;
+  width: 1083px;
+  height: 681px;
+  background: rgba(212, 254, 255, 0.6);
+  filter: blur(100px);
+  transform: rotate(9.55deg);
+}
+@media (max-width: 1024px) {
+  .home .circle_blue {
+    width: 343px;
+    height: 215px;
+    left: -130px;
+    bottom: -38px;
+    filter: blur(30px);
+    top: auto;
+  }
+}
+.home .circle_pink {
+  position: absolute;
+  top: 47px;
+  right: 39px;
+  width: 811px;
+  height: 511px;
+  background: rgba(249, 212, 255, 0.6);
+  filter: blur(100px);
+  transform: rotate(9.55deg);
+}
+@media (max-width: 1024px) {
+  .home .circle_pink {
+    width: 256px;
+    height: 161px;
+    right: -42px;
+    bottom: 17px;
+    filter: blur(30px);
+    top: auto;
+  }
+}
+.home_in {
+  position: relative;
+  z-index: 2;
+}
+.home h1 {
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 68px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #121225;
+}
+@media (max-width: 1024px) {
+  .home h1 {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+}
+.home p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  text-align: center;
+  color: #121225;
+  max-width: 604px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .home p {
+    font-size: 14px;
+  }
+}
+.home_btns {
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .home_btns {
+    margin: 30px 0 15px 0;
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .home_btns {
+    flex-direction: column;
+  }
+}
+.home_btns .blue_btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #FFFFFF;
+  padding: 16.5px 28px;
+  display: flex;
+  justify-content: center;
+  border-radius: 99px;
+  background: #0071E3;
+}
+@media (max-width: 768px) {
+  .home_btns .blue_btn {
+    width: 223px;
+    font-size: 14px;
+  }
+}
+.home_btns .btn_two {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #0071E3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 14.5px 28px;
+  border-radius: 99px;
+  border: 1px solid #0071E3;
+}
+@media (max-width: 768px) {
+  .home_btns .btn_two {
+    width: 223px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+.home_imgs {
+  height: 378px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1280px) {
+  .home_imgs {
+    height: 288px;
+  }
+}
+@media (max-width: 1024px) {
+  .home_imgs {
+    height: 199px;
+  }
+}
+@media (max-width: 768px) {
+  .home_imgs {
+    overflow: visible;
+    height: 119px;
+  }
+}
+.home_imgs::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 4;
+  height: 264px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(243, 255, 248, 0) 0%, #F3FFF8 100%);
+}
+@media (max-width: 1024px) {
+  .home_imgs::before {
+    height: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .home_imgs::before {
+    height: 83px;
+    left: -74px;
+    width: calc(100% + 146px);
+  }
+}
+.home_imgs .img_one {
+  width: 851px;
+  height: 378px;
+  border-radius: 16px 16px 0 0;
+  position: absolute;
+  left: 221px;
+  z-index: 2;
+}
+@media (max-width: 1280px) {
+  .home_imgs .img_one {
+    width: 651px;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .home_imgs .img_one {
+    width: 451px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .home_imgs .img_one {
+    width: 269px;
+    height: 119px;
+    border-radius: 5px 5px 0 0;
+  }
+}
+@media (max-width: 480px) {
+  .home_imgs .img_one {
+    margin: 0;
+  }
+}
+.home_imgs .img_two {
+  width: 354px;
+  height: 161px;
+  border-radius: 16px;
+  position: absolute;
+  left: 25px;
+  top: 97px;
+}
+@media (max-width: 1024px) {
+  .home_imgs .img_two {
+    left: 0;
+    height: auto;
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .home_imgs .img_two {
+    width: 112px;
+    height: 51px;
+    border-radius: 5px;
+    left: -66px;
+    top: 31px;
+    opacity: 80%;
+  }
+}
+.home_imgs .img_five {
+  position: absolute;
+  right: 0;
+  top: 84px;
+  width: 304px;
+  height: 173px;
+  border-radius: 16px;
+}
+@media (max-width: 1024px) {
+  .home_imgs .img_five {
+    height: auto;
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .home_imgs .img_five {
+    width: 96px;
+    height: 55px;
+    border-radius: 5px;
+    right: -55px;
+    top: 26px;
+    opacity: 80%;
+  }
+}
+.home_imgs_block {
+  width: 441px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: 145px;
+  top: 47px;
+  z-index: 3;
+}
+@media (max-width: 1024px) {
+  .home_imgs_block {
+    width: 160px;
+    height: 95px;
+    right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .home_imgs_block {
+    right: -10px;
+    width: 139px;
+    height: 79px;
+    gap: 3px;
+    top: 14px;
+  }
+}
+.home_imgs_block img {
+  width: 380px;
+  bottom: 120px;
+  box-shadow: 0px 0px 20px 0px rgba(42, 71, 54, 0.05);
+  border-radius: 16px;
+}
+@media (max-width: 1024px) {
+  .home_imgs_block img {
+    height: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .home_imgs_block img {
+    width: 120px;
+    height: 38px;
+    border-radius: 5px;
+  }
+}
+.home_imgs_block img:last-child {
+  margin-left: auto;
+}
+@media (max-width: 1024px) {
+  .home_imgs_block img:last-child {
+    transform: translateX(20px);
+  }
+}
+
 .partner {
   padding: 70px 0;
 }
@@ -783,6 +1104,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .follower .container {
   max-width: 1480px;
+  padding: 0;
 }
 .follower .main_title {
   position: relative;
@@ -1019,6 +1341,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .leaders .container {
   max-width: 1480px;
+  padding: 0;
 }
 .leaders_in {
   background: rgb(18, 18, 37);
