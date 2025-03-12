@@ -24,6 +24,27 @@
 // })
 // burger
 
+// nav
+document.addEventListener('DOMContentLoaded', function () {
+  const navBtn = document.querySelector('.nav_btn');
+  const navContent = document.querySelector('.nav_content');
+
+  navBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      navContent.classList.toggle('active');
+      navBtn.classList.toggle('active');
+  });
+
+  document.addEventListener('click', function (e) {
+      if (!navContent.contains(e.target) && !navBtn.contains(e.target)) {
+          navContent.classList.remove('active');
+          navBtn.classList.remove('active');
+      }
+  });
+});
+
+// nav
+
 let swiper = new Swiper(".clientsSwiper", {
   slidesPerView: 1.2,
   spaceBetween: 10,

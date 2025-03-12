@@ -650,6 +650,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .header .nav_link .nav_btn {
   position: relative;
 }
+.header .nav_link .nav_btn img {
+  transition: 0.2s ease;
+}
+.header .nav_link .nav_btn.active img {
+  transform: rotate(180deg);
+}
 .header .nav_link .nav_content {
   width: 220px;
   position: absolute;
@@ -659,9 +665,14 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 16px 10px;
   background: #FFFFFF;
   display: none;
+  z-index: 4;
   flex-direction: column;
   gap: 10px;
   overflow: hidden;
+  box-shadow: 0px 10px 30px 0px rgba(42, 71, 54, 0.05);
+}
+.header .nav_link .nav_content.active {
+  display: flex;
 }
 .header .nav_link .nav_content a {
   padding: 6px 10px;
