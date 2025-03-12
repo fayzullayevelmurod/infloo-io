@@ -43,15 +43,18 @@ let swiper = new Swiper(".clientsSwiper", {
   },
 });
 
-document.querySelectorAll('.tab').forEach(tab => {
-  tab.addEventListener('click', (e) => {
-      const targetTab = e.target.getAttribute('data-tab');
+document.querySelectorAll('.tabs-container').forEach(container => {
+  container.addEventListener('click', (e) => {
+      const tab = e.target.closest('.tab');
+      if (!tab) return;
 
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      const targetTab = tab.getAttribute('data-tab');
+
+      container.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      container.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
 
       tab.classList.add('active');
-      document.getElementById(targetTab).classList.add('active');
+      container.querySelector(`#${targetTab}`)?.classList.add('active');
   });
 });
 
