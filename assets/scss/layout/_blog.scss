@@ -96,6 +96,11 @@
 
   .news {
     padding-top: 0;
+    padding-bottom: 100px;
+
+    @include media('md') {
+      padding-bottom: 50px;
+    }
 
     &_card {
 
@@ -136,6 +141,53 @@
         font-size: 14px;
         line-height: 140%;
         color: $color-grey;
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    @include media('md') {
+      gap: 6px;
+      margin-top: 50px;
+    }
+
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: -2%;
+      color: $color-black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border: 1px solid $color-grey;
+      border-radius: 50%;
+      flex-shrink: 0;
+      transition: .2s ease;
+
+      @include media('md') {
+        width: 42px;
+        height: 42px;
+      }
+
+      &:hover {
+        color: $color-white;
+        background: $color-black;
+        border: 1px solid transparent;
+      }
+
+      &.active {
+        color: $color-white;
+        background: $color-black;
+        border: 1px solid transparent;
       }
     }
   }
