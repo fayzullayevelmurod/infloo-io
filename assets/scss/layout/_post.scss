@@ -1,5 +1,55 @@
 // post
 .post {
+  position: relative;
+
+  .breadcrumb_in {
+    @include media('sm') {
+      overflow-x: scroll;
+    }
+  }
+
+  .breadcrumb {
+    overflow-x: scroll;
+  }
+
+  .blue_circle {
+    position: absolute;
+    top: 6px;
+    left: 370px;
+    width: 808px;
+    height: 508px;
+    background: rgba(212, 254, 255, 0.6);
+    filter: blur(75px);
+    transform: rotate(-9.55deg);
+
+    @include media('md') {
+      width: 447px;
+      height: 281px;
+      filter: blur(41px);
+      top: 102px;
+      left: -148px;
+    }
+  }
+
+  .pink_circle {
+    position: absolute;
+    top: 94px;
+    right: 362px;
+    width: 539px;
+    height: 278px;
+    background: rgba(249, 212, 255, 0.6);
+    filter: blur(75px);
+    transform: rotate(-9.55deg);
+
+    @include media('md') {
+      width: 298px;
+      height: 153px;
+      filter: blur(41px);
+      top: 101px;
+      right: -148px;
+    }
+  }
+
   .container {
     max-width: 1056px;
   }
@@ -18,6 +68,18 @@
       color: $color-grey;
       margin-bottom: 10px;
     }
+
+    .main_title {
+      @include media('lg') {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &_top {
+    position: relative;
+    position: relative;
+    z-index: 3;
   }
 
   &_head {
@@ -35,6 +97,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 
     span {
       font-weight: 600;
@@ -42,6 +105,20 @@
       line-height: 100%;
       letter-spacing: -2%;
       color: $color-blue;
+
+      @include media('md') {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &_head_right {
+    position: relative;
+
+    @include media('sm') {
+      position: absolute;
+      right: 20px;
+      top: -10px;
     }
   }
 
@@ -57,9 +134,17 @@
     background: $color-white;
     padding: 9px 12px;
     border-radius: 99px;
+
+    @include media('sm') {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
   }
 
   .share_links {
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
     display: none;
     padding: 16px 10px;
     border-radius: 16px;
@@ -67,6 +152,9 @@
     width: 202px;
     flex-direction: column;
     gap: 10px;
+    z-index: 2;
+    box-shadow: 0px 10px 30px 0px rgba(42, 71, 54, 0.05);
+
 
     &.active {
       display: flex;
@@ -90,7 +178,16 @@
     }
   }
 
+  .post_container {
+    @include media('md') {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
   &_in {
+    position: relative;
+    z-index: 2;
     border-radius: 40px;
     box-shadow: 0px 10px 30px 0px rgba(42, 71, 54, 0.05);
     padding: 50px;
@@ -217,9 +314,10 @@
   }
 }
 .news_post {
-  .main_title {
+
+  .news_title_text {
     @include media('md') {
-      text-align: left;
+      align-items: start;
     }
   }
 }

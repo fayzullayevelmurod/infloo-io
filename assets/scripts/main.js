@@ -9,6 +9,15 @@ burger_btn.addEventListener('click', () => {
 })
 // burger
 
+// burger
+let share_btn = document.querySelector('.share_btn');
+let share_links = document.querySelector('.share_links');
+
+share_btn.addEventListener('click', () => {
+  share_links.classList.toggle('active');
+})
+// burger
+
 // nav
 document.addEventListener('DOMContentLoaded', function () {
   const navBtn = document.querySelector('.nav_btn');
