@@ -9,14 +9,19 @@ burger_btn.addEventListener('click', () => {
 })
 // burger
 
-// burger
-let share_btn = document.querySelector('.share_btn');
-let share_links = document.querySelector('.share_links');
+// post
+document.addEventListener('DOMContentLoaded', function () {
+  let share_btn = document.querySelector('.share_btn');
+  let share_links = document.querySelector('.share_links');
 
-share_btn.addEventListener('click', () => {
-  share_links.classList.toggle('active');
-})
-// burger
+  if (share_btn && share_links) {
+      share_btn.addEventListener('click', () => {
+          share_links.classList.toggle('active');
+      });
+  }
+});
+
+// post
 
 // nav
 document.addEventListener('DOMContentLoaded', function () {
